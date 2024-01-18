@@ -7,7 +7,8 @@
 - [REACT] componente com eventos [OK]
 
 - [REACT] componente com estado [OK]
-- [REACT] comunbicação entre componentes (direta) []
-- [REACT] comunbicação entre componentes (indireta) []
+- [REACT] comunbicação entre componentes (direta) [OK]
+- [REACT] comunbicação entre componentes (indireta) [OK]
 - [REACT] renderização condicional []
 - [REACT] renderização de listas []
+  

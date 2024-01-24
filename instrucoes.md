@@ -9,6 +9,7 @@
 - [REACT] componente com estado [OK]
 - [REACT] comunbicação entre componentes (direta) [OK]
 - [REACT] comunbicação entre componentes (indireta) [OK]
-- [REACT] renderização condicional []
+
+- [REACT] renderização condicional [OK]
 - [REACT] renderização de listas []
   

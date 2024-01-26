@@ -35,6 +35,7 @@ export default function ProdutoItem(props: ProdutoItemProps) {
                     <button className={`botao text-black bg-green-300 
                     rounded-md border border-black
                     flex w-full justify-center gap-2 
+                    onClick={() => props.comprar(produto)}
                     `}>
                         <IconShoppingCart /> Comprar
                     </button>

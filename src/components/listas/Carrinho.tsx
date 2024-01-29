@@ -7,6 +7,7 @@ interface CarrinhoProps {
     itens: ItemCarrinho[]
 }
 
+
 export default function Carrinho(props: CarrinhoProps) {
     const total = props.itens.reduce((soma, item) => {
         return soma + item.quantidade * item.produto.preco

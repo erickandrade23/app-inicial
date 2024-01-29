@@ -12,6 +12,6 @@ export default function ListaProdutos(props: ListaProdutoProps) {
             {props.produtos.map((produto)=>{
                     return <ProdutoItem key={produto.id} produto={produto} comprar={props.comprar}/>
             })}
-            </div>
+        </div>
     )
 }

@@ -1,4 +1,5 @@
 import Produto from "@/model/Produto"; 
+import Moeda from '@/utils/Moeda'
 import { IconShoppingCart } from "@tabler/icons-react";
 import Image from 'next/image'
 
@@ -26,7 +27,7 @@ export default function ProdutoItem(props: ProdutoItemProps) {
             <div className='flex flex-col p-3 gap-3'>
                 <div className='flex justify-between items-center'>
                     <div className='text-2xl text-black font-black'>{produto.nome}</div>
-                    <div className='text-red-500 font-bold'>R$ {produto.preco}</div>
+                    <div className='text-red-500 font-bold'>{Moeda.formatar (produto.preco)}</div>
                 </div>
                 <div>
                     <div className='text-black'>{produto.descricao}</div>

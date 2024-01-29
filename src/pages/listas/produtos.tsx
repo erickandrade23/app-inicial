@@ -4,6 +4,7 @@ import produtos from '@/constants/produtos'
 import ItemCarrinho from '@/model/ItemCarrinho'
 import Link from 'next/link'
 import { useState } from 'react'
+import Produto from '@/model/Produto'
 
 export default function PaginaProdutos() {
 

@@ -6,10 +6,16 @@ interface CarrinhoProps {
 }
 export default function Carrinho(props: CarrinhoProps) {
     return (
-        <div>
-            {props.itens.map((item, q) => {
-                return <CarrinhoItem key={i} {...item} />
+        <div className='flex flex-col w-full'>
+            <div className='bg-zinc-800 text-3xl p-3'>
+                Carrinho
+            </div>
+            <div className='p-5'>
+                {props.itens.map((item, i) => {
+                    return <CarrinhoItem key={i} {...item} />
                 })}
+            </div>
         </div>
     )
 }
+     

@@ -1,9 +1,9 @@
 import Carrinho from '@/components/listas/Carrinho'
 import ListaProdutos from '@/components/listas/ListaProdutos'
 import produtos from '@/constants/produtos'
-//import CarrinhoContext from '@/data/contexts/CarrinhoContext'
+import ItemCarrinho from '@/model/ItemCarrinho'
 import Link from 'next/link'
-import { useContext } from 'react'
+import { useState } from 'react'
 
 export default function PaginaProdutos() {
 
@@ -13,7 +13,7 @@ export default function PaginaProdutos() {
         const itemAtual = itens.find((item) => item.produto.id === produtos.id) ?? { quantidade: 0, produto}
         const novoItem = {...itemAtual, quantidade: itemAtual.quantidade + 1}
         const outrosItens = itens.filter((item) => item.produto.id !== produto.id)
-        setItens{[...outrosItens, novoItem])
+        //setItens{[...outrosItens, novoItem])
     }
 
     return (

@@ -1,7 +1,7 @@
 import Carrinho from '@/components/listas/Carrinho'
 import ListaProdutos from '@/components/listas/ListaProdutos'
 import produtos from '@/constants/produtos'
-import CarrinhoContext from '@/data/contexts/CarrinhoContexts'
+import CarrinhoContext from '@/data/contexts/CarrinhoContext'
 import Link from 'next/link'
 import { useContext } from 'react'
 

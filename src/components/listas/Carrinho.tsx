@@ -6,7 +6,9 @@ import Moeda from '@/utils/Moeda'
 interface CarrinhoProps {
     itens: ItemCarrinho[]
 }
-
+interface reduce {
+    reduce: reduce
+}
 
 export default function Carrinho(props: CarrinhoProps) {
     const total = props.itens.reduce((soma, item) => {

@@ -24,7 +24,7 @@ function exibirComoMoeda(valor: number) {
                 {props.produto.nome}
             </span>
             <span className="pr-5">
-                {exibirComoMoeda(props.produto.preco * props.quantidade)}
+                {Moeda.formatar(props.produto.preco * props.quantidade)}
             </span>
         </div>
     )

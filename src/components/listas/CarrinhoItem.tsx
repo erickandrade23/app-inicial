@@ -3,6 +3,13 @@ import Moeda from "@/utils/Moeda";
 
 
 export default function CarrinhoItem(props: ItemCarrinho) {
+function exibirComoMoeda(valor: number) {
+    return new Intl.NumberFormat('ptBR', {
+        style: 'currency',
+        currency: 'BRL'
+    }).format(valor)
+}
+
     return (
         <div className={`
             flex items-center gap-2 rounded-full bg-blue-500
@@ -17,7 +24,7 @@ export default function CarrinhoItem(props: ItemCarrinho) {
                 {props.produto.nome}
             </span>
             <span className="pr-5">
-                {Moeda.formatar(props.produto.preco * props.quantidade)}
+                {exibirComoMoeda(props.produto.preco * props.quantidade)}
             </span>
         </div>
     )
